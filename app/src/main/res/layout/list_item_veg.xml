@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/ivVegPic">
+
+        <TextView
+            android:id="@+id/et_veg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="default: vet"
+            android:layout_alignParentTop = "true"
+
+            />
+
+        <TextView
+            android:id="@+id/et_veg_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="default: 0.0"
+            android:layout_below="@+id/et_veg_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp" />
+
+    </RelativeLayout >
+
+    <ImageView
+        android:id="@+id/ivVegPic"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
